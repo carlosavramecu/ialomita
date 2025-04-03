@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ialomița - Atracții turistice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Ialomița</a>
+      <div class="hamburger" id="hamburgerBtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre județ</a></li>
+        <li><a class="active" href="attractions.html">Atracții turistice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-content animated-section">
+    <h1>Atracții turistice în Ialomița</h1>
+
+    <!-- Sistem de filtrare -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">Toate</button>
+      <button class="filter-btn" data-category="istorice">Istorice</button>
+      <button class="filter-btn" data-category="naturale">Naturale</button>
+      <button class="filter-btn" data-category="evenimente">Evenimente</button>
+    </div>
+
+    <!-- Lista atracțiilor (fiecare cu un mini-carusel de imagini) -->
+    <div class="attractions-list" id="attractionsContainer">
+
+      <!-- Atracție 1 (istorică) -->
+      <div class="attraction-item" data-category="istorice">
+        <h2>Mănăstirea Balaciu </h2>
+        <div class="attraction-carousel">
+          <div class="carousel-images">
+            <img src="imagini/placeholder_manastire1.jpg" alt="Mănăstirea Balaciu - vedere exterioară">
+            <img src="imagini/placeholder_manastire2.jpg" alt="Mănăstirea Balaciu - detalii arhitecturale">
+			<img src="imagini/placeholder_manastire3.jpg" alt="Mănăstirea Balaciu - detalii arhitecturale">
+			<img src="imagini/placeholder_manastire4.jpg" alt="Mănăstirea Balaciu - detalii arhitecturale">
+			<img src="imagini/placeholder_manastire5.jpg" alt="Mănăstirea Balaciu - detalii arhitecturale">
+          </div>
+          <button class="carousel-prev">&#10094;</button>
+          <button class="carousel-next">&#10095;</button>
+        </div>
+        <p>
+          Mănăstirea Balaciu, situată în comuna Balaciu, județul Ialomița, este un important așezământ monahal ortodox. Biserica principală, cu hramul „Adormirea Maicii Domnului”, a fost construită între 1821 și 1841 de boierii Neacșu și Ecaterina Piteșteanu pe moșia lor. După ce satul a fost mutat din cauza inundațiilor, biserica a rămas izolată. În 1927, episcopul Gherontie Nicolau a inițiat transformarea acesteia în mănăstire de călugări, oficializată în 1929. În perioada comunistă, mănăstirea a fost închisă în 1961, iar călugării au fost alungați. După 1990, mănăstirea a fost redeschisă și restaurată, revenind la viața monahală și spirituală.
+        </p>
+      </div>
+	  
+	  <!-- Atracție 2 (istorică) -->
+	  <div class="attraction-item" data-category="istorice">
+		  <h2>Biserica "Sfântul Nicolae" din Grivița</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_grivita1.jpg" alt="Biserica Grivița - vedere frontală">
+			  <img src="imagini/placeholder_grivita2.jpg" alt="Turnul bisericii">
+			  <img src="imagini/placeholder_grivita3.jpg" alt="Iconostasul bisericii">
+			  <img src="imagini/placeholder_grivita4.jpg" alt="Detalii arhitecturale">
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Biserica "Sfântul Nicolae" din Grivița, construită în 1835, este un monument istoric de importanță națională (cod LMI: IL-II-m-A-14110). Edificiul a fost ridicat pe locul unei biserici de lemn din 1720, sub patronajul familiei boierești Stirbei. Arhitectura impresionantă combină elemente brâncovenești cu influențe neoclasice. Biserica a jucat un rol important în Răscoala din 1907, servind ca punct de adunare pentru revoluționari. În interior se păstrează icoane originale din secolul al XIX-lea și un iconostas sculptat în lemn de stejar. Clopotnița separată, construită în 1850, adăpostește trei clopote istorice, cel mai mare turnat în 1842 la București.
+		  </p>
+	  </div>
+	  
+	  <!-- Atracție 3 (istorică) -->	
+	  <div class="attraction-item" data-category="istorice">
+		  <h2>Ruinele Bisericii Sălcioara</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_salcioara1.jpg" alt="Ruinele bisericii - vedere generală">
+			  <img src="imagini/placeholder_salcioara2.jpg" alt="Zidurile laterale păstrate">
+			  <img src="imagini/placeholder_salcioara3.jpg" alt="Detalii arhitecturale">
+			  <img src="imagini/placeholder_salcioara4.jpg" alt="Placa comemorativă">
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Ruinele Bisericii "Adormirea Maicii Domnului" din Sălcioara datează din prima jumătate a secolului al XIX-lea (circa 1830) și reprezintă un important monument al arhitecturii religioase de tip brâncovenesc din regiune. Biserica a fost abandonată în 1940 din cauza mutării satului și a degradării progresive. Structura păstrează ziduri impunătoare de piatră și cărămidă, cu arcade originale și elemente decorative sculptate în piatră. Pe locul altarului se află o cruce memorială ridicată în 2005 de către comunitatea locală. Situl este inclus în Lista Monumentelor Istorice sub codul LMI: IL-II-m-B-14168 și reprezintă un punct de interes pentru cercetătorii de arhitectură istorică.
+		  </p>
+	  </div>
+	
+      <!-- Atracție 1 (naturală) -->
+      <div class="attraction-item" data-category="naturale">
+        <h2>Rezervația Naturală a Bărăganului</h2>
+        <div class="attraction-carousel">
+          <div class="carousel-images">
+            <img src="imagini/placeholder_natura1.jpg" alt="Peisaj natural Bărăgan">
+            <img src="imagini/placeholder_natura2.jpg" alt="Faună și floră în Bărăgan">
+			<img src="imagini/placeholder_natura3.jpg" alt="Lacul Strachina">
+			<img src="imagini/placeholder_natura4.jpg" alt="Lacul Strachina">
+			<img src="imagini/placeholder_natura5.jpg" alt="Lacul Strachina">
+			<img src="imagini/placeholder_natura6.jpg" alt="Lacul Strachina">
+          </div>
+          <button class="carousel-prev">&#10094;</button>
+          <button class="carousel-next">&#10095;</button>
+        </div>
+        <p>
+          Câmpia Bărăganului, situată în sud-estul României, este cunoscută pentru solul său negru, bogat în humus, favorabil agriculturii. Climatul aspru, cu veri fierbinți și uscate și ierni geroase cu vânturi puternice, a contribuit la dezvoltarea unei vegetații de stepă specifică. ​
+		 În această regiune se află Pădurea Ciornuleasa, o rezervație naturală forestieră și cinegetică înființată în 1954, care protejează o pădure de tip șleau de câmpie. Aici cresc specii precum stejarul, stejarul brumăriu, carpenul, teiul, cărpinița, frasinul pufos, vișinul turcesc și ulmul. Fauna include iepuri, mistreți, căprioare și fazani, făcând din această pădure o rezervație unică. ​
+         De asemenea, Lacul Strachina, o arie naturală protejată de 1.050 de hectare, oferă un habitat pentru diverse specii de pești și păsări, fiind un loc de atracție pentru pescari și iubitorii de natură. ​
+
+        </p>
+      </div>
+	  
+	  <!-- Atracție 2 (naturală) -->
+	  <div class="attraction-item" data-category="naturale">
+		  <h2>Rezervația Naturală "Lacul Fundata"</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_fundata1.jpg" alt="Lacul Fundata - vedere panoramică">
+			  <img src="imagini/placeholder_fundata2.jpg" alt="Păsări acvatice pe lac">
+			  <img src="imagini/placeholder_fundata3.jpg" alt="Vegetație lacustră">
+			  <img src="imagini/placeholder_fundata4.jpg" alt="Zona de lizieră a lacului">
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Lacul Fundata, situat la 3 km nord de orașul Fetești, este o rezervație naturală de 115 hectare inclusă în Lista Roșie a ariilor protejate din România. Acest lac natural de lunca inundabilă a Dunării adăpostește peste 150 de specii de păsări migratoare, inclusiv câteva specii protejate la nivel european. Aici pot fi observate: cormoranul mic, stârcul galben, egreta albă mică și lișița. Vegetația specifică include stufărișuri extinse și pajiști inundabile. Lacul este un loc ideal pentru observarea păsărilor, având o platformă special amenajată pentru birdwatching. Din 2005, zona face parte din Rețeaua Natura 2000 ca Sit de Importanță Comunitară (ROSCI0065).
+		  </p>
+	  </div>
+	  
+	  <!-- Atracție 3 (naturală) -->
+	  <div class="attraction-item" data-category="naturale">
+		  <h2>Lacul Amara</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_amara1.jpg" alt="Lacul Amara - vedere panoramică">
+			  <img src="imagini/placeholder_amara2.jpg" alt="Stațiunea balneară Amara">
+			  <img src="imagini/placeholder_amara3.jpg" alt="Nămol terapeutic">
+			  <img src="imagini/placeholder_amara4.jpg" alt="Păsări acvatice">	
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Lacul Amara, situat în partea de sud a județului Ialomița, este unul dintre cele mai importante lacuri sărate din România. Acest lac natural, cu o suprafață de 130 de hectare, este cunoscut pentru apele sale sărate și bogate în minerale, precum și pentru nămolul terapeutic. Apa lacului conține concentrații ridicate de cloruri, sulfați și bicarbonați, ceea ce îi conferă proprietăți curative recunoscute oficial.
+
+			Stațiunea balneară Amara, înființată în 1936, utilizează aceste resurse naturale în tratamente pentru afecțiuni reumatice, dermatologice și ginecologice. Lacul este și un important habitat pentru păsări acvatice, fiind inclus în Rețeaua Natura 2000 ca zonă de protecție specială avifaunistică.
+
+			Forma lacului, asemănătoare literei S, este rezultatul proceselor geologice care au modelat Câmpia Română. În prezent, lacul atrage atât turiști în căutare de tratamente, cât și iubitori ai naturii interesați de observarea păsărilor și a peisajului unic.
+		  </p>
+	  </div>
+
+      <!-- Atracție 1 (evenimente) -->
+      <div class="attraction-item" data-category="evenimente">
+        <h2>Festivalul Tradițiilor de Vară</h2>
+        <div class="attraction-carousel">
+          <div class="carousel-images">
+            <img src="imagini/placeholder_festival1.jpg" alt="Festival Tradițional Ialomița">
+            <img src="imagini/placeholder_festival2.jpg" alt="Dansuri și muzică populară">
+			<img src="imagini/placeholder_festival3.jpg" alt="Echipa de dansatori">
+			<img src="imagini/placeholder_festival4.jpg" alt="Echipa de dansatori">
+			<img src="imagini/placeholder_festival5.jpg" alt="Echipa de dansatori">
+			<img src="imagini/placeholder_festival6.jpg" alt="Echipa de dansatori">
+			<img src="imagini/placeholder_festival7.jpg" alt="Echipa de dansatori">
+          </div>
+          <button class="carousel-prev">&#10094;</button>
+          <button class="carousel-next">&#10095;</button>
+        </div>
+        <p>
+         ​Festivalul Internațional de Folclor „Floare de pe Bărăgan” este un eveniment cultural de prestigiu, desfășurat anual în județul Ialomița, România, de obicei în perioada iunie-iulie, în cadrul Zilelor Sloboziei. Acest festival reunește ansambluri folclorice din diverse țări, promovând tradițiile și obiceiurile populare prin cântece și dansuri autentice. Participanții își prezintă costumele tradiționale și oferă spectacole care evidențiază patrimoniul cultural al regiunilor lor. Festivalul include parade ale portului popular pe străzile orașelor și comunelor ialomițene, spectacole în aer liber și schimburi culturale între artiști. Prin intermediul acestui eveniment, județul Ialomița devine un punct de întâlnire al culturilor, contribuind la păstrarea și promovarea diversității folclorice la nivel internațional.​
+        </p>
+      </div>
+    </div>
+
+	<!-- Atracție 2 (evenimente) -->
+      <div class="attraction-item" data-category="evenimente">
+		  <h2>Festivalul Freeland Slobozia</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_freeland1.jpg" alt="Festivalul Freeland - scenă principală">
+			  <img src="imagini/placeholder_freeland2.jpg" alt="Instalații artistice">
+			  <img src="imagini/placeholder_freeland3.jpg" alt="Publicul festivalului">
+			  <img src="imagini/placeholder_freeland4.jpg" alt="Zone tematice">
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Festivalul Freeland din Slobozia, ediția 2025, este un eveniment muzical și cultural de amploare ce va avea loc în Pădurea Peri între 11-13 iulie. Accesul este gratuit în intervalul 16:00-02:00 (vineri) și 12:00-02:00 (sâmbătă și duminică). Evenimentul se remarcă prin concerte extraordinare, instalații artistice inovatoare, proiecții de lumină spectaculoase și zone tematice interactive. Festivalul promovează nu doar muzica, ci și conexiunea umană și angajamentul față de mediu, fiind recunoscut pentru inițiativele sale sociale și parteneriatele valoroase. Minorii sub 16 ani pot participa doar însoțiți de adulți. Freeland Festival evoluează constant, aducând în fiecare ediție inovații și surprize care îl transformă într-o experiență unică în județul Ialomița :cite[10].
+		  </p>
+		</div>
+		
+	<!-- Atracție 3 (evenimente) -->
+		<div class="attraction-item" data-category="evenimente">
+		  <h2>Festivalul Vlah Spirit</h2>
+		  <div class="attraction-carousel">
+			<div class="carousel-images">
+			  <img src="imagini/placeholder_vlah1.jpg" alt="Dansuri tradiționale vlahe">
+			  <img src="imagini/placeholder_vlah2.jpg" alt="Costume populare">
+			  <img src="imagini/placeholder_vlah3.jpg" alt="Muzicieni tradiționali">
+			  <img src="imagini/placeholder_vlah4.jpg" alt="Arta populară">
+			</div>
+			<button class="carousel-prev">&#10094;</button>
+			<button class="carousel-next">&#10095;</button>
+		  </div>
+		  <p>
+			Festivalul Vlah Spirit este o celebrare autentică a tradițiilor și culturii vlahe din județul Ialomița. Desfășurat anual în luna august, evenimentul reunește comunități vlahe din întreaga regiune pentru a-și prezenta bogata moștenire culturală. Vizitatorii pot descoperi muzică și dans tradițional, costume populare unice și meșteșuguri specifice. Festivalul include ateliere interactive unde meșterii populari împărtășesc tehnici tradiționale de prelucrare a lemnului, ceramicii și textilelor. De asemenea, se organizează degustări de bucătărie tradițională vlahă, cu preparate precum "ciorbă de lobodă" și "plăcinte vlahești". Evenimentul reprezintă o oportunitate unică de a explora identitatea culturală a acestei comunități tradiționale din județul Ialomița, contribuind la păstrarea și promovarea patrimoniului cultural imaterial.
+		  </p>
+		</div>
+    <!-- Hartă interactivă (simplu embed) -->
+    <h2>Localizarea atracțiilor pe hartă</h2>
+    <div class="map-container">
+      <!-- Poți folosi un iframe Google Maps simplu -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88141.97309347964!2d27.31447527419448!3d44.56433974970759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b60ce46897360b%3A0x814e337223762f07!2sSlobozia%2C%20Romania!5e0!3m2!1sen!2sro!4v0000000000000" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Buton Înapoi sus -->
+  <button id="backToTopBtn" title="Înapoi sus">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ialomița - Acasă</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- (OPȚIONAL) Font Awesome pentru iconițe; necesită conexiune la internet -->
+  <!-- <script src="https://kit.fontawesome.com/abc123xyz.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <!-- Bara de navigare (fixă) + Meniu adaptiv -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Ialomița</a>
+
+      <!-- Buton hamburger (pentru mobil) -->
+      <div class="hamburger" id="hamburgerBtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre județ</a></li>
+        <li><a href="attractions.html">Atracții turistice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Secțiune Hero -->
+  <header class="hero-section">
+    <h1>Bine ați venit în Județul Ialomița</h1>
+    <p>Descoperiți frumusețile naturale și cultura bogată a județului nostru.</p>
+  </header>
+
+  <!-- Slider imagini (cu bullet points + butoane stânga/dreapta) -->
+  <section class="slider">
+    <div class="slides" id="slidesContainer">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="imagini/placeholder1.jpg" alt="Peisaj natural Ialomița">
+        <div class="slide-caption">
+          <h2>Peisaje uimitoare</h2>
+          <p>Câmpuri, păduri și ape care îți taie respirația.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="imagini/placeholder2.jpg" alt="Atracție turistică Ialomița">
+        <div class="slide-caption">
+          <h2>Monumente istorice</h2>
+          <p>Descoperă moștenirea culturală a județului.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="imagini/placeholder3.jpg" alt="Peisaj cu Dunărea">
+        <div class="slide-caption">
+          <h2>Frumusețea Dunării</h2>
+          <p>Râurile și Dunărea fac parte din farmecul regiunii.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Butoane stânga/dreapta -->
+    <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+    <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+    <!-- Bullet points -->
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- Secțiune scurtă de prezentare -->
+  <section class="intro-section">
+    <h2>Despre Ialomița</h2>
+    <p>
+      Județul Ialomița, situat în sud-estul României, face parte din regiunea istorică Muntenia și are ca reședință municipiul Slobozia. Acest județ se remarcă printr-un bogat patrimoniu cultural, tradiții locale autentice și peisaje naturale impresionante, fiind o destinație potrivită pentru cei care doresc să descopere frumusețea rurală a României.
+		<br><br>
+Geografia județului este marcată de câmpii întinse și fertile, care susțin o agricultură prosperă. De asemenea, Ialomița beneficiază de zone de luncă și de proximitatea fluviului Dunărea, oferind oportunități variate pentru relaxare și turism. Lacurile și râurile din județ creează un cadru ideal pentru pescuit, plimbări cu barca și observarea faunei sălbatice.
+		<br><br>
+Slobozia, capitala județului, este un oraș plăcut, cu un ritm de viață liniștit, dar bogat în evenimente culturale. Unul dintre cele mai importante repere ale orașului este Muzeul Național al Agriculturii, unic în România, unde vizitatorii pot explora evoluția agriculturii românești de-a lungul timpului. Tot în Slobozia se desfășoară Festivalul Internațional de Folclor „Floare de pe Bărăgan”, un eveniment ce adună ansambluri din întreaga lume.
+	<br><br>
+Pentru iubitorii de istorie și spiritualitate, Mănăstirea Balaciu reprezintă un loc de reculegere și frumusețe arhitecturală. Totodată, Rezervația Naturală a Bărăganului oferă ocazia de a explora flora și fauna specifică zonei de stepă.
+	<br><br>
+Județul Ialomița îmbină tradiția cu modernitatea, natura cu cultura, fiind o destinație ideală pentru cei care caută autenticitate și liniște.
+    </p>
+    <p>
+      Aici veți găsi câmpuri fertile, zone de luncă și o apropiere specială de Dunăre, care oferă oportunități turistice și recreative variate.
+    </p>
+  </section>
+
+  <!-- Carusel testimoniale (exemplu) -->
+  <section class="testimonials-section">
+    <h2>Ce spun vizitatorii?</h2>
+    <div class="testimonials-container" id="testimonialsCarousel">
+      <div class="testimonial active">
+        <p>„Ialomița m-a surprins prin frumusețea peisajelor și ospitalitatea localnicilor!”</p>
+        <h4>- Avramescu Carlos Cristian</h4>
+      </div>
+      <div class="testimonial">
+        <p>„Slobozia este un oraș liniștit, cu oameni calzi și primitori. Parcul Tineretului este locul meu preferat pentru relaxare.”</p>
+        <h4>- Pavelescu Izabela Florentina</h4>
+      </div>
+      <div class="testimonial">
+        <p>„Festivalul ‘Floare de pe Bărăgan’ mi-a oferit ocazia să descopăr tradițiile autentice ale județului. A fost o experiență culturală extraordinară!”</p>
+        <h4>- Belceanu Ionuț</h4>
+      </div>
+	  <div class="testimonial">
+        <p>„Rezervația Naturală a Bărăganului este un loc spectaculos. Peisajele nesfârșite și fauna specifică m-au făcut să mă simt în mijlocul unei adevărate povești.”</p>
+        <h4>- Cosma George Sebastian</h4>
+      </div>
+	  <div class="testimonial">
+        <p>„Slobozia are un farmec aparte. Muzeul Național al Agriculturii este o comoară pentru cei pasionați de istoria rurală a României.”</p>
+        <h4>- Chiriță Rareș</h4>
+      </div>
+	  <div class="testimonial">
+        <p>„Bărăganul poate părea monoton pentru unii, dar pentru mine este un simbol al simplității și autenticității. Apusurile de aici sunt absolut superbe!”</p>
+        <h4>- Damian Darius</h4>
+      </div>
+	  <div class="testimonial">
+        <p>„Mănăstirea Balaciu este un loc deosebit, încărcat de istorie și spiritualitate. M-a impresionat liniștea și frumusețea arhitecturii.”</p>
+        <h4>- Dulgheru Darius Eduard</h4>
+      </div>
+	  <div class="testimonial">
+        <p>„În Ialomița am descoperit tradiții păstrate cu grijă, mâncare autentică și oameni care își respectă trecutul. O destinație subestimată, dar cu mult potențial!”</p>
+        <h4>- Tudor-Stoian Rareș</h4>
+      </div>
+    </div>
+    <!-- Butoane carusel testimoniale -->
+    <button id="testimonialsPrev" class="testimonial-btn">&#10094;</button>
+    <button id="testimonialsNext" class="testimonial-btn">&#10095;</button>
+  </section>
+
+  <!-- Buton Înapoi sus -->
+  <button id="backToTopBtn" title="Înapoi sus">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

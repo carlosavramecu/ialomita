@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ialomița - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Ialomița</a>
+      <div class="hamburger" id="hamburgerBtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre județ</a></li>
+        <li><a href="attractions.html">Atracții turistice</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-content animated-section">
+    <h1>Contact</h1>
+    <p>Pentru informații suplimentare sau întrebări, ne puteți contacta prin formularul de mai jos:</p>
+
+    <form class="contact-form" method="post" action="send_email.php">
+	  <label for="name">Nume:</label>
+	  <input type="text" id="name" name="name" placeholder="Introduceți numele dvs." required>
+
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" placeholder="Introduceți adresa de email" required>
+
+	  <label for="message">Mesaj:</label>
+	  <textarea id="message" name="message" rows="5" placeholder="Scrieți mesajul dvs." required></textarea>
+
+	  <button type="submit">Trimite</button>
+	</form>
+
+    <div class="contact-details">
+      <h2>Detalii de contact:</h2>
+      <p>Adresa: Strada Episcopiei Nr. 1, 920023 Municipiul Slobozia, Județul Ialomița</p>
+      <p>Telefon: +40 243 207 130</p>
+      <p>Email: office@municipiulslobozia.ro</p>
+    </div>
+  </section>
+
+  <button id="backToTopBtn" title="Înapoi sus">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
